@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Time left in </title>
+	<script src="w.js"></script>
+	<style type="text/css">
+		body {
+			text-align: center;
+			font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		span {
+			font-weight: bold;
+			font-size: 3em;
+		}
+	</style>
+</head>
+<body>
+	<h1>How much time left in Devesh's Birthday  ?</h1>
+	<span id="countdown-holder"></span>
+	<script type="text/javascript">
+		var clock = document.getElementById("countdown-holder"), 
+			targetDate = new Date(2016,05, 29); // Dec 14, 2015; (dec==11)
+		 
+		clock.innerHTML = countdown(targetDate).toString();
+		  	setInterval(function(){
+		    	clock.innerHTML = countdown(targetDate).toString();
+		  	}, 1000);
+	</script>
+</body>
+</html>
